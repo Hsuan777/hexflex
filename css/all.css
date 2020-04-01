@@ -342,7 +342,10 @@ template {
 }
 
 body {
+  min-width: 960px;
   background-color: #EEE;
+  font-size: 16px;
+  padding: 10px 20px;
 }
 
 a {
@@ -353,6 +356,49 @@ a:hover {
   color: red;
 }
 
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+table,
+figure {
+  margin-bottom: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
 a[href*="https://www.youtube.com"]:hover {
   color: red;
 }
@@ -361,65 +407,16 @@ a[href*="https://www.facebook.com"]:hover {
   color: #3b5998;
 }
 
-.d-flex {
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.justify-content--start {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.justify-content--center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.justify-content--end {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.justify-content--between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.justify-content--between {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.list-styled--none {
-  list-style: none;
-}
-
-.mr-1 {
-  margin-right: 0.5rem;
-}
-
-.writing-mode--htb {
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
-}
-
-.writing-mode--vrl {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-}
-
-.writing-mode--vlr {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar__brand {
@@ -430,6 +427,15 @@ a[href*="https://www.facebook.com"]:hover {
   white-space: nowrap;
   background-image: url("../img/logo.png");
   background-repeat: no-repeat;
+}
+
+.navbar__nav {
+  list-style: none;
+}
+
+.navbar__item {
+  margin-left: 20px;
+  font-size: 1.5rem;
 }
 
 .progress-round__list li {
@@ -479,10 +485,137 @@ a[href*="https://www.facebook.com"]:hover {
 .top {
   border: 0px;
   background-color: rgba(240, 232, 225, 0.5);
-  color: theme-color("primary");
   position: fixed;
   z-index: 99;
   bottom: 25px;
   right: 25px;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-content--start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.justify-content--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-content--end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.justify-content--between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-content--between {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.align-items--start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.align-items--center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.align-items--end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.align-items--between {
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+.align-items--between {
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+}
+
+.list-styled--none {
+  list-style: none;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.mt-1 {
+  margin-top: 0.2rem;
+}
+
+.mt-2 {
+  margin-top: 0.4rem;
+}
+
+.mr-1 {
+  margin-right: 0.2rem;
+}
+
+.mr-2 {
+  margin-right: 0.4rem;
+}
+
+.ml-1 {
+  margin-left: 0.2rem;
+}
+
+.ml-2 {
+  margin-left: 0.4rem;
+}
+
+.writing-mode--htb {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
+}
+
+.writing-mode--vrl {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.writing-mode--vlr {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
 }
 /*# sourceMappingURL=all.css.map */

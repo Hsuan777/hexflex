@@ -1,6 +1,15 @@
 .navbar{
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   &__brand{
     @include hidden_text(224px, 50px, "../img/logo.png");
+  }
+  &__nav{
+    list-style: none;
+  }
+  &__item{
+    margin-left: 20px;
+    font-size: 1.5rem;
   }
 }
