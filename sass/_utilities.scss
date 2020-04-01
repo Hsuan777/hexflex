@@ -1,11 +1,42 @@
+.d-flex{
+  display: flex;
+}
+.justify-content{
+  &--start{
+    justify-content: flex-start;
+  }
+  &--center{
+    justify-content: center;
+  }
+  &--end{
+    justify-content: flex-end;
+  }
+  &--between{
+    justify-content: space-between;
+  }
+  &--between{
+    justify-content: space-around;
+  }
+}
+
+.list-styled--none{
+  list-style: none;
+}
+
+
+.mr-1{
+  margin-right: 0.5rem;
+}
+
+
 // 文字上至下
-.writing-htb{
+.writing-mode--htb{
   writing-mode: horizontal-tb;
 }
-.writing-vrl{
+.writing-mode--vrl{
   writing-mode: vertical-rl; 
 }
-.writing-vlr{
+.writing-mode--vlr{
   writing-mode: vertical-lr;
 }
 

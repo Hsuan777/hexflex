@@ -1,0 +1,6 @@
+.navbar{
+  
+  &__brand{
+    @include hidden_text(224px, 50px, "../img/logo.png");
+  }
+}

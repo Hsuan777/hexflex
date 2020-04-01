@@ -1,9 +1,7 @@
 
-@import "custom";
 
-
-
-// Project
+@import "normalize";
+@import "var";
 @import "mixin";
 @import "base";
 @import "layout";
@@ -11,3 +9,7 @@
 @import "utilities";
 @import "components/components";
 
+
+// Project
+
+@import "custom";
