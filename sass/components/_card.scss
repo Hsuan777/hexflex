@@ -1,0 +1,9 @@
+.card{
+  
+  &__text{
+   width: 100%; 
+   padding: 10px ;
+   line-height: 1.5;
+   background-image: linear-gradient(white, #EEE);
+  }
+}

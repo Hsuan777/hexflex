@@ -1,42 +1,57 @@
 // 基礎標籤設定
-body{
-  min-width: 960px;
-  background-color: #EEE;
-  font-size: 16px;
-  padding:10px 20px ;
+* {
+  box-sizing: border-box; 
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;      
+}
+
+html, body{
+  font-size: $body__font-size;
+  background-color: $body__background-color;
+  color: map-get($color, primary);
+  font-family:  $body__font-family;
+  padding: 5px 20px ;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }
 
 a{
+  color:  map-get($color, primary);
   text-decoration: none;
   &:hover{
-    color: red;
+    color: map-get($color, secondary);
   }
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 23px;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 1.6rem;
 }
 
 h4 {
-  font-size: 19px;
+  font-size: 1.4rem;
 }
 
 h5 {
-  font-size: 17px;
+  font-size: 1.2rem;
 }
 
 h6 {
-  font-size: 15px;
+  font-size: 1rem;
 }
-
+ul{
+  padding: 0;
+}
 
 p,
 h1,
