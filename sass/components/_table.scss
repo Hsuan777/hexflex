@@ -1,0 +1,23 @@
+.table{
+  width: 100%;
+  margin-bottom: $spacer;
+  
+  
+  th, td {
+    padding: $table__cell__padding;
+    vertical-align: top;
+  }
+  thead th {
+    vertical-align: bottom;
+  }
+  
+}
+
+.table-hover {
+  tbody tr {
+    @include hover() {
+      color: $table__color--hover;
+      background-color: darken($table__bg--hover, 15%) ;
+    }
+  }
+}

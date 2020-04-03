@@ -14,3 +14,20 @@ $body__font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI
 $body__background-color:#EEE;
 
 
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+  ),
+  $spacers
+);
+
+$table__cell__padding : .75rem;
+$table__color--hover: black;
+$table__bg--hover: white;

@@ -9,9 +9,19 @@
   writing-mode: vertical-lr;
 }
 
+.text-left {
+  text-align: left;
+}
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
+}
+
+.text-primary{
+  color: map-get($color, primary)
+}
+.text-secondary{
+  color: map-get($color, secondary)
 }
