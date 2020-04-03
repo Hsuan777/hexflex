@@ -13,7 +13,7 @@
   
 }
 
-.table-hover {
+.table--hover {
   tbody tr {
     @include hover() {
       color: $table__color--hover;

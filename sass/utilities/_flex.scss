@@ -1,6 +1,12 @@
 .d-flex {
   display: flex;
 }
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
 .flex-direction {
   &--column {
     flex-direction: column;
@@ -22,7 +28,7 @@
   &--between {
     justify-content: space-between;
   }
-  &--between {
+  &--around {
     justify-content: space-around;
   }
 }
@@ -40,7 +46,7 @@
   &--between {
     align-items: space-between;
   }
-  &--between {
+  &--around {
     align-items: space-around;
   }
 }

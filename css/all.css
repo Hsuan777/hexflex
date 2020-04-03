@@ -415,10 +415,22 @@ table {
   border-spacing: 0px;
 }
 
+label {
+  margin-bottom: 5px;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
 }
 
 .flex-direction--column {
@@ -459,7 +471,7 @@ table {
           justify-content: space-between;
 }
 
-.justify-content--between {
+.justify-content--around {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -488,7 +500,7 @@ table {
           align-items: space-between;
 }
 
-.align-items--between {
+.align-items--around {
   -webkit-box-align: space-around;
       -ms-flex-align: space-around;
           align-items: space-around;
@@ -566,6 +578,10 @@ table {
 
 .m-0 {
   margin: 0;
+}
+
+.m-auto {
+  margin: 0 auto;
 }
 
 .p-0 {
@@ -717,6 +733,24 @@ a[href*="https://twitter.com/"]:hover {
   background-image: linear-gradient(white, #EEE);
 }
 
+.form {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(white));
+  background-image: linear-gradient(#EEE, white);
+}
+
+.form__group {
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
 .table {
   width: 100%;
   margin-bottom: 1rem;
@@ -731,7 +765,7 @@ a[href*="https://twitter.com/"]:hover {
   vertical-align: bottom;
 }
 
-.table-hover tbody tr:hover {
+.table--hover tbody tr:hover {
   color: black;
   background-color: #d9d9d9;
 }
@@ -795,6 +829,14 @@ a[href*="https://twitter.com/"]:hover {
 
 .list-styled--circle {
   list-style-type: circle;
+}
+
+.bg-primary {
+  background-color: black;
+}
+
+.bg-secondary {
+  background-color: #22ae39;
 }
 
 .border {
