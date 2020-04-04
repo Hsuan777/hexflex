@@ -361,7 +361,7 @@ img {
 }
 
 a {
-  color: black;
+  color: #37523d;
   text-decoration: none;
 }
 
@@ -397,6 +397,15 @@ ul {
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #37523d;
+}
+
 p,
 h1,
 h2,
@@ -411,6 +420,10 @@ figure {
   margin-bottom: 20px;
 }
 
+p {
+  line-height: 1.5;
+}
+
 table {
   border-spacing: 0px;
 }
@@ -423,6 +436,13 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.d-flex--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .d-block {
@@ -440,11 +460,16 @@ label {
           flex-direction: column;
 }
 
-.flex-direction--reverse {
+.flex-direction--column-reverse {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+}
+
+.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .justify-content--start {
@@ -588,12 +613,48 @@ label {
   padding: 0;
 }
 
+.py-3 {
+  padding: 1rem 0;
+}
+
+.pt-3 {
+  padding-top: 1rem;
+}
+
+.pl-1 {
+  padding-left: 0.2rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-3 {
+  padding-left: 1rem;
+}
+
+.pl-4 {
+  padding-left: 1.5rem;
+}
+
+.pl-5 {
+  padding-left: 2rem;
+}
+
+.p-5 {
+  padding: 2rem;
+}
+
 .mt-1 {
   margin-top: 0.2rem;
 }
 
 .mt-2 {
   margin-top: 0.4rem;
+}
+
+.my-5 {
+  margin: 0 2rem;
 }
 
 .mb-1 {
@@ -618,6 +679,10 @@ label {
 
 .ml-2 {
   margin-left: 0.4rem;
+}
+
+.h-100 {
+  height: 100%;
 }
 
 .writing-mode--htb {
@@ -651,11 +716,11 @@ label {
 }
 
 .text-primary {
-  color: black;
+  color: #37523d;
 }
 
 .text-secondary {
-  color: #22ae39;
+  color: #e7eeea;
 }
 
 .clear {
@@ -725,12 +790,14 @@ a[href*="https://twitter.com/"]:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(mag-get((primary: #37523d, secondary: #e7eeea, success: #22ae39), secondary)), to(#EEE));
+  background-image: linear-gradient(mag-get((primary: #37523d, secondary: #e7eeea, success: #22ae39), secondary), #EEE);
+}
+
 .card__text {
   width: 100%;
   padding: 10px;
-  line-height: 1.5;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#EEE));
-  background-image: linear-gradient(white, #EEE);
 }
 
 .form {
@@ -832,11 +899,11 @@ a[href*="https://twitter.com/"]:hover {
 }
 
 .bg-primary {
-  background-color: black;
+  background-color: #37523d;
 }
 
 .bg-secondary {
-  background-color: #22ae39;
+  background-color: #e7eeea;
 }
 
 .border {
@@ -850,5 +917,18 @@ a[href*="https://twitter.com/"]:hover {
 
 .rounded {
   border-radius: 5px;
+}
+
+.custom__img {
+  max-width: 100%;
+  height: 256px;
+}
+
+.custom__img__lg {
+  height: 100%;
+}
+
+.custom__img__sm {
+  height: 50px;
 }
 /*# sourceMappingURL=all.css.map */

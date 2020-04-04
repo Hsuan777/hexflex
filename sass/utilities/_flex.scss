@@ -1,5 +1,8 @@
 .d-flex {
   display: flex;
+  &--reverse{
+    flex-direction: row-reverse;
+  }
 }
 .d-block {
   display: block;
@@ -11,9 +14,12 @@
   &--column {
     flex-direction: column;
   }
-  &--reverse {
+  &--column-reverse {
     flex-direction: column-reverse;
   }
+}
+.wrap{
+  flex-wrap: wrap;
 }
 .justify-content {
   &--start {

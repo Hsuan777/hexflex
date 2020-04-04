@@ -4,13 +4,15 @@
 
 // 加入色彩變數，但只適合變數使用
 $color: (
-  primary: black,
-  secondary: #22ae39
+  primary: #37523d,
+  secondary: #e7eeea,
+  success: #22ae39
 );
 
 
 $body__font-size:16px;
 $body__font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$body__color:black;
 $body__background-color:#EEE;
 
 

@@ -1,21 +1,15 @@
 @import "normalize";
 @import "variables";
 
-// Project
 
-@import "custom";
 
 @import "mixin";
 @import "base";
 @import "layout";
-@import "utilities/flex";
-@import "utilities/grid";
-@import "utilities/spacing";
-@import "utilities/text";
-@import "utilities/clear";
-@import "utilities/icon";
+@import "utilities/utilities";
 @import "components/components";
 @import "utilities";
 
-
+// Project
+@import "custom";
 

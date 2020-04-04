@@ -8,7 +8,7 @@
 html, body{
   font-size: $body__font-size;
   background-color: $body__background-color;
-  color: map-get($color, primary);
+  color: $body__color;
   font-family:  $body__font-family;
   padding: 5px 20px ;
 }
@@ -22,7 +22,7 @@ a{
   color:  map-get($color, primary);
   text-decoration: none;
   &:hover{
-    color: map-get($color, secondary);
+    color: map-get($color, success);
   }
 }
 
@@ -52,7 +52,14 @@ h6 {
 ul{
   padding: 0;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: map-get($color, primary);
+}
 p,
 h1,
 h2,
@@ -66,7 +73,9 @@ table,
 figure {
   margin-bottom: 20px;
 }
-
+p{
+  line-height: 1.5;
+}
 table{
   border-spacing:0px;
 }

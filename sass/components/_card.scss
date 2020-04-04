@@ -1,9 +1,10 @@
 .card{
-  
+  background-image: linear-gradient(mag-get($color, secondary), #EEE);
   &__text{
    width: 100%; 
    padding: 10px ;
-   line-height: 1.5;
-   background-image: linear-gradient(white, #EEE);
+   
+  //  background-image: linear-gradient(white, #EEE);
+   
   }
 }
