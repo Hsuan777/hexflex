@@ -350,7 +350,7 @@ template {
 html, body {
   font-size: 16px;
   background-color: #EEE;
-  color: black;
+  color: #829886;
   font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   padding: 5px 20px;
 }
@@ -366,7 +366,7 @@ a {
 }
 
 a:hover {
-  color: #22ae39;
+  color: #829886;
 }
 
 h1 {
@@ -414,7 +414,6 @@ h4,
 h5,
 h6,
 ol,
-ul,
 table,
 figure {
   margin-bottom: 20px;
@@ -649,6 +648,14 @@ label {
   padding: 2rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .mt-1 {
   margin-top: 0.2rem;
 }
@@ -678,7 +685,7 @@ label {
 }
 
 .mr-2 {
-  margin-right: 0.4rem;
+  margin-right: 0.5rem;
 }
 
 .ml-1 {
@@ -689,8 +696,28 @@ label {
   margin-left: 0.4rem;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
 .h-100 {
   height: 100%;
+}
+
+.my-2 {
+  margin: 0.5rem 0;
 }
 
 .writing-mode--htb {
@@ -729,6 +756,14 @@ label {
 
 .text-secondary {
   color: #e7eeea;
+}
+
+.text-success {
+  color: #829886;
+}
+
+.text-white {
+  color: white;
 }
 
 .clear {
@@ -783,6 +818,27 @@ a[href*="https://twitter.com/"]:hover {
   font-size: 1.5rem;
 }
 
+.navbar__column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar__column__nav {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar__column__item {
+  padding: 1rem 0;
+}
+
+.navbar__column__item + .navbar__column__item {
+  border-top: 1px solid #c6cec9;
+}
+
 .banner {
   margin: 20px 0;
   position: relative;
@@ -799,8 +855,8 @@ a[href*="https://twitter.com/"]:hover {
 }
 
 .card {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(mag-get((primary: #37523d, secondary: #e7eeea, success: #22ae39), secondary)), to(#EEE));
-  background-image: linear-gradient(mag-get((primary: #37523d, secondary: #e7eeea, success: #22ae39), secondary), #EEE);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(mag-get((primary: #37523d, secondary: #e7eeea, success: #829886), secondary)), to(#EEE));
+  background-image: linear-gradient(mag-get((primary: #37523d, secondary: #e7eeea, success: #829886), secondary), #EEE);
 }
 
 .card__text {
@@ -821,9 +877,14 @@ a[href*="https://twitter.com/"]:hover {
 }
 
 .btn {
-  padding: 5px;
   display: inline-block;
   text-align: center;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn:focus {
+  outline: 0;
 }
 
 .table {
@@ -843,6 +904,25 @@ a[href*="https://twitter.com/"]:hover {
 .table--hover tbody tr:hover {
   color: black;
   background-color: #d9d9d9;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product__item {
+  max-width: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.product__img {
+  height: 200px;
+  display: block;
 }
 
 .progress-round__list li {
@@ -916,6 +996,14 @@ a[href*="https://twitter.com/"]:hover {
 
 .border {
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-right {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-left {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .box-shadow {

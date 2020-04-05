@@ -1,5 +1,11 @@
 .btn{
- padding: 5px;
+ 
  display: inline-block;
  text-align: center;
+ background-color: transparent;
+ border: 1px solid rgba(0, 0, 0, 0.1); 
+ &:focus{
+   outline: 0;   
+ }
+ 
 }
