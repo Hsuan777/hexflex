@@ -19,15 +19,8 @@
   text-align: right;
 }
 
-.text-primary{
-  color: map-get($color, primary)
-}
-.text-secondary{
-  color: map-get($color, secondary)
-}
-.text-success{
-  color: map-get($color, success)
-}
-.text-white{
-  color: white;
+@each $color, $value in $theme-colors {
+  #{".text-#{$color}"} {
+    color: $value !important;
+  }
 }

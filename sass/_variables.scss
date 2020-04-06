@@ -1,12 +1,27 @@
 
-// 加入文字大小
+// TODO:加入推擠距離
 // 參考 Bootstrap4
 
-// 加入色彩變數，但只適合變數使用
 $color: (
   primary: #37523d,
   secondary: #e7eeea,
   success: #6fd6ab,
+);
+
+$primary:      #37523d !default;
+$secondary:    #e7eeea !default;
+$success:      #6fd6ab !default;
+$white:        white   !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "white":      $white,
+  ),
+  $theme-colors
 );
 
 
@@ -36,3 +51,5 @@ $table__bg--hover: white;
 
 $form__padding: .75rem;
 $form__group__margin-bottom : 10px;
+
+

@@ -7,15 +7,7 @@
     list-style-type : circle;
   }
 }
-.bg-primary{
-  background-color: map-get($color, primary);
-}
-.bg-secondary{
-  background-color: map-get($color, secondary);
-}
-.bg-white{
-  background-color: white;
-}
+
 
 .border {
   border: 1px solid rgba(0, 0, 0, 0.1);

@@ -431,6 +431,22 @@ label {
   margin-bottom: 5px;
 }
 
+.bg-primary {
+  background-color: #37523d !important;
+}
+
+.bg-secondary {
+  background-color: #e7eeea !important;
+}
+
+.bg-success {
+  background-color: #6fd6ab !important;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,19 +766,19 @@ label {
 }
 
 .text-primary {
-  color: #37523d;
+  color: #37523d !important;
 }
 
 .text-secondary {
-  color: #e7eeea;
+  color: #e7eeea !important;
 }
 
 .text-success {
-  color: #6fd6ab;
+  color: #6fd6ab !important;
 }
 
 .text-white {
-  color: white;
+  color: white !important;
 }
 
 .clear {
@@ -979,18 +995,6 @@ a[href*="https://twitter.com/"]:hover {
 
 .list-styled--circle {
   list-style-type: circle;
-}
-
-.bg-primary {
-  background-color: #37523d;
-}
-
-.bg-secondary {
-  background-color: #e7eeea;
-}
-
-.bg-white {
-  background-color: white;
 }
 
 .border {
