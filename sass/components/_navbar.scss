@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   &__brand{
     @include hidden_text(224px, 50px, "../img/logo.png");
   }
@@ -21,9 +22,7 @@
     }
     &__item{
       padding: 1rem 0;
-      + .navbar__column__item{
-        border-top: 1px solid #c6cec9;
-      }
+      
     }
   }
 }

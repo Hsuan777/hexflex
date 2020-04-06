@@ -366,7 +366,7 @@ a {
 }
 
 a:hover {
-  color: #829886;
+  color: #6fd6ab;
 }
 
 h1 {
@@ -547,7 +547,6 @@ label {
 .col-10,
 .col-11,
 .col-12 {
-  display: inline;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -759,7 +758,7 @@ label {
 }
 
 .text-success {
-  color: #829886;
+  color: #6fd6ab;
 }
 
 .text-white {
@@ -835,10 +834,6 @@ a[href*="https://twitter.com/"]:hover {
   padding: 1rem 0;
 }
 
-.navbar__column__item + .navbar__column__item {
-  border-top: 1px solid #c6cec9;
-}
-
 .banner {
   margin: 20px 0;
   position: relative;
@@ -855,8 +850,8 @@ a[href*="https://twitter.com/"]:hover {
 }
 
 .card {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(mag-get((primary: #37523d, secondary: #e7eeea, success: #829886), secondary)), to(#EEE));
-  background-image: linear-gradient(mag-get((primary: #37523d, secondary: #e7eeea, success: #829886), secondary), #EEE);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(mag-get((primary: #37523d, secondary: #e7eeea, success: #6fd6ab), secondary)), to(#EEE));
+  background-image: linear-gradient(mag-get((primary: #37523d, secondary: #e7eeea, success: #6fd6ab), secondary), #EEE);
 }
 
 .card__text {
@@ -902,7 +897,7 @@ a[href*="https://twitter.com/"]:hover {
 }
 
 .table--hover tbody tr:hover {
-  color: black;
+  color: #829886;
   background-color: #d9d9d9;
 }
 
@@ -994,8 +989,20 @@ a[href*="https://twitter.com/"]:hover {
   background-color: #e7eeea;
 }
 
+.bg-white {
+  background-color: white;
+}
+
 .border {
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-0 {
+  border: none;
+}
+
+.border-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .border-right {
@@ -1018,10 +1025,6 @@ a[href*="https://twitter.com/"]:hover {
 .custom__img {
   max-width: 100%;
   height: 256px;
-}
-
-.custom__img__lg {
-  height: 100%;
 }
 
 .custom__img__sm {

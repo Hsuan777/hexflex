@@ -6,8 +6,7 @@
 $color: (
   primary: #37523d,
   secondary: #e7eeea,
-  success: #829886
-  // success: #22ae39
+  success: #6fd6ab,
 );
 
 
@@ -32,7 +31,7 @@ $spacers: map-merge(
 );
 
 $table__cell__padding : .75rem;
-$table__color--hover: black;
+$table__color--hover: #829886;
 $table__bg--hover: white;
 
 $form__padding: .75rem;

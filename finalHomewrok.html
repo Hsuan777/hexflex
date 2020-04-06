@@ -32,12 +32,12 @@
 
 <body>
   <header>
-    <div class="container ">
-      <nav class="navbar bg-secondary">
+    <div class="container mb-2">
+      <nav class="navbar ">
         <a class="navbar__brand " href="index.html"> HOME </a>
         <ul class="navbar__nav d-flex ">
           <li class="navbar__item">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li class="navbar__item">
             <a href="#">About</a>
@@ -54,8 +54,9 @@
   </header>
 
   <main>
+    <!-- 第一關 -->
     <div class="container  mb-2 ">
-      <div class="d-flex justify-content--around">
+      <div class="d-flex justify-content--around bg-secondary">
         <div class="col-4 ">
           <div class="card">
             <div class="card__text d-flex flex-direction--column align-items--center">
@@ -86,7 +87,9 @@
 
       </div>
     </div>
+    <hr>
 
+    <!-- 第二關 -->
     <div class="container mb-2">
       <div class="d-flex justify-content--center align-items--center ">
         <div class="col-5  p-5  border bg-secondary  ">
@@ -103,40 +106,40 @@
         </div>
       </div>
     </div>
-
+    <hr>
     
-    <!-- 沒有加入flex 的 col不會自動產生寬度 ，原因是?-->
-    <!-- 因為 col 已被設定成 inline ，block雖然可以達成所要的寬度，但是不會排列，所以還是需要 flex來協助排版 -->
-    <!-- 這樣無論是 inline還是 block都能達成一樣的效果 -->
+    <!-- 第三關 -->
     <div class="container mb-2">
       <div class="d-flex justify-content--center ">
         <div class="col-6 ">
           <div class="d-flex flex-direction--column justify-content--center align-items--center ">
             <h3>水文旦之高</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ullam voluptate, adipisci illum consequatur error quis soluta officiis delectus? Iusto!</p>
-            <img src="img/pic_2.png" alt="">
+            <img src="img/pic_2.png" alt="" class="custom__img">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima odit saepe nobis, suscipit fugit fugiat pariatur nesciunt ea vel aliquam voluptate maxime consequuntur architecto dolores veniam! Rem possimus nobis aliquam.</p>
           </div>
         </div>
       </div>
     </div>
+    <hr>
 
+    <!-- 第四關 -->
     <div class="container mb-2">
       <div class="d-flex">
         <div class="col-4 bg-secondary pt-3">
-          <div class="d-flex flex-direction--column align-items--center ">
+          <div class="navbar navbar__column px-3">
             <img src="img/logo__span.png" alt="">
-            <ul class="list-styled--none text-center">
-              <li class="navbar__item mb-2">
+            <ul class="navbar__nav navbar__column__nav">
+              <li class="navbar__column__item border-0 ">
                 <a href="#" >Home</a>
               </li>
-              <li class="navbar__item mb-2">
+              <li class="navbar__column__item border-0">
                 <a href="#" >About</a>
               </li>
-              <li class="navbar__item mb-2">
+              <li class="navbar__column__item border-0">
                 <a href="#" >Product</a>
               </li>
-              <li class="navbar__item mb-2">
+              <li class="navbar__column__item border-0">
                 <a href="#" >Contact</a>
               </li>
             </ul>
@@ -157,8 +160,9 @@
         </div>
       </div>
     </div>
-    
-
+    <hr>
+ 
+    <!-- 第五關 -->
     <div class="container mb-2">
       <div class="d-flex bg-secondary">
         <div class="col-4">
@@ -229,14 +233,16 @@
         </div>
       </div>
     </div>
-
+    <hr>
+ 
+    <!-- 第六關 -->
     <div class="container mb-2">
-      <div class="card  ">
+      <div class="card  border">
         <div class="d-flex justify-content--between bg-secondary align-items--center px-3 mb-5 ">
           <img src="img/logo__span.png" alt="" class="">
           <h3 type="button" class="text-primary"> more </h3>
         </div>
-        <div class="d-flex px-3">
+        <div class="card__text d-flex px-3">
           <div class="col-3">
             <img src="img/pic_6.png" alt="">
           </div>
@@ -255,8 +261,9 @@
         </div>
       </div>
     </div>
-
-
+    <hr>
+    
+    <!-- 第九關 -->
     <div class="container mb-2">
       <div class="d-flex justify-content--end">
         <div class="col-4 border">
@@ -305,8 +312,9 @@
         </div>
       </div>
     </div>
-
-
+    <hr>
+    
+    <!-- 第十關 -->
     <div class="container mb-2">
       <div class="d-flex">
         <div class="col-3  ">
@@ -314,9 +322,9 @@
             <h3 class="text-center bg-primary text-white py-3 m-0 w-100 ">甜點類別</h3>
             <ul class="navbar__nav navbar__column__nav">
               <li class="navbar__column__item bg-secondary  ">所有甜點</li>
-              <li class="navbar__column__item">本日精選</li>
-              <li class="navbar__column__item">人氣精選</li>
-              <li class="navbar__column__item">新品上市</li>
+              <li class="navbar__column__item border-top">本日精選</li>
+              <li class="navbar__column__item border-top">人氣精選</li>
+              <li class="navbar__column__item border-top">新品上市</li>
             </ul>
           </nav>
         </div>
@@ -381,10 +389,12 @@
 
   </footer>
 
-
-
-
-
 </body>
 
 </html>
+
+<!-- 沒有加入 flex 的 col不會自動產生寬度 ，原因是?-->
+<!-- 960排版的 col預設是 inline，bootStrap 4 則沒有設定 -->
+<!-- div 是區塊元素，但不會自動排列，藉由 flex特性來完成排版 -->
+
+<!-- img是行內元素，所以會造成些許間距，改成 block間距會消失 -->
