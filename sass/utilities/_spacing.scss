@@ -1,101 +1,117 @@
-.m-0 {
-  margin: 0;
-}
-.m-auto {
-  margin: 0 auto;
-}
-.p-0 {
-  padding: 0;
-}
-.px-3{
-  padding: 0 1rem;
-}
-.py-3 {
-  padding: 1rem 0 ;
-}
-.pt-3 {
-  padding-top: 1rem  ;
-}
-
-
-.pl-1 {
-  padding-left: 0.2rem  ;
-}
-.pl-2 {
-  padding-left: 0.5rem  ;
-}
-.pl-3 {
-  padding-left: 1rem  ;
-}
-.pl-4 {
-  padding-left: 1.5rem  ;
-}
-.pl-5 {
-  padding-left: 2rem  ;
-}
-.p-5 {
-  padding:2rem;
-}
-.pb-2{
-  padding-bottom: 0.5rem;
-}
-.pr-2{
-  padding-right: 0.5rem;
+// prop   -> property 屬性
+// abbrev -> abbreviation 縮寫
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $spacer, $value in $spacers {
+    .#{$abbrev}-#{$spacer} {
+      #{$prop}: $value !important;
+    }
+    .#{$abbrev}t-#{$spacer},
+    .#{$abbrev}y-#{$spacer} {
+      #{$prop}-top: $value !important;
+    }
+    .#{$abbrev}r-#{$spacer},
+    .#{$abbrev}x-#{$spacer} {
+      #{$prop}-right: $value !important;
+    }
+    .#{$abbrev}b-#{$spacer},
+    .#{$abbrev}y-#{$spacer} {
+      #{$prop}-bottom: $value !important;
+    }
+    .#{$abbrev}l-#{$spacer},
+    .#{$abbrev}x-#{$spacer} {
+      #{$prop}-left: $value !important;
+    }
+  }
 }
 
+// p px py pt pr pb pl
+// $spacer -> 1~5
+// @each $spacer, $value in $spacers {
+//   #{".p-#{$spacer}"} {
+//     padding: $value !important;
+//   }
+// }
+// @each $spacer, $value in $spacers {
+//   #{".px-#{$spacer}"} {
+//     padding: 0px $value !important;
+//   }
+// }
+// @each $spacer, $value in $spacers {
+//   #{".py-#{$spacer}"} {
+//     padding: $value 0 !important;
+//   }
+// }
+// @each $spacer, $value in $spacers {
+//   #{".pt-#{$spacer}"} {
+//     padding-top: $value !important;
+//   }
+// }
+// @each $spacer, $value in $spacers {
+//   #{".pr-#{$spacer}"} {
+//     padding-right: $value !important;
+//   }
+// }
+// @each $spacer, $value in $spacers {
+//   #{".pb-#{$spacer}"} {
+//     padding-bottom: $value !important;
+//   }
+// }
+// @each $spacer, $value in $spacers {
+//   #{".pl-#{$spacer}"} {
+//     padding-left: $value !important;
+//   }
+// }
 
+// m mx my mt mr mb ml
+// @each $spacer, $value in $spacers {
+//   #{".m-#{$spacer}"} {
+//     margin: $value !important;
+//   }
+// }
+// @each $spacer, $value in $spacers {
+//   #{".mx-#{$spacer}"} {
+//     margin: 0px $value !important;
+//   }
+// }
+// @each $spacer, $value in $spacers {
+//   #{".my-#{$spacer}"} {
+//     margin: $value 0 !important;
+//   }
+// }
+// @each $spacer, $value in $spacers {
+//   #{".mt-#{$spacer}"} {
+//     margin-top: $value !important;
+//   }
+// }
+// @each $spacer, $value in $spacers {
+//   #{".mr-#{$spacer}"} {
+//     margin-right: $value !important;
+//   }
+// }
+// @each $spacer, $value in $spacers {
+//   #{".mb-#{$spacer}"} {
+//     margin-bottom: $value !important;
+//   }
+// }
+// @each $spacer, $value in $spacers {
+//   #{".ml-#{$spacer}"} {
+//     margin-left: $value !important;
+//   }
+// }
 
-
-.mt-1 {
-  margin-top: 0.2rem;
-}
-.mt-2 {
-  margin-top: 0.4rem;
-}
-.my-5 {
-  margin: 0 2rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.2rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-.mb-5 {
-  margin-bottom: 2rem;
-}
-
-.mr-1 {
-  margin-right: 0.2rem;
-}
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.ml-1 {
-  margin-left: 0.2rem;
-}
-.ml-2 {
-  margin-left: 0.4rem;
-}
-.w-100{
+.w-100 {
   width: 100%;
 }
-.w-75{
+.w-75 {
   width: 75%;
 }
-.w-50{
+.w-50 {
   width: 50%;
 }
-.w-25{
+.w-25 {
   width: 25%;
 }
 
-.h-100{
+.h-100 {
   height: 100%;
-}
-
-.my-2{
-  margin: 0.5rem 0
 }
