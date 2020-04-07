@@ -360,7 +360,12 @@ img {
 }
 
 a {
+  color: #37523d;
   text-decoration: none;
+}
+
+a:hover {
+  color: #6fd6ab;
 }
 
 h1 {
@@ -953,19 +958,19 @@ label {
 }
 
 .text-primary {
-  color: #37523d !important;
+  color: #37523d;
 }
 
 .text-secondary {
-  color: #e7eeea !important;
+  color: #e7eeea;
 }
 
 .text-success {
-  color: #6fd6ab !important;
+  color: #6fd6ab;
 }
 
 .text-white {
-  color: white !important;
+  color: white;
 }
 
 .clear {
@@ -1021,11 +1026,21 @@ a[href*="https://twitter.com/"]:hover {
 }
 
 .navbar__link {
-  color: #37523d;
+  position: relative;
 }
 
 .navbar__link:hover {
-  color: #6fd6ab !important;
+  color: #6fd6ab;
+}
+
+.navbar__link:hover::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #6fd6ab;
+  left: 0;
+  bottom: 0;
 }
 
 .navbar__column {

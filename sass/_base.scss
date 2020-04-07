@@ -18,7 +18,11 @@ img{
 }
 
 a{
+  color: map-get($color, primary );
   text-decoration: none;
+  &:hover{
+    color: map-get($color, success) ;
+  }
 }
 
 h1 {
