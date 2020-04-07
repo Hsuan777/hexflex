@@ -360,12 +360,7 @@ img {
 }
 
 a {
-  color: #37523d;
   text-decoration: none;
-}
-
-a:hover {
-  color: #6fd6ab;
 }
 
 h1 {
@@ -998,17 +993,13 @@ a[href*="https://twitter.com/"]:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .navbar__brand {
-  width: 100%;
-  width: 224px;
+  width: 50%;
   height: 50px;
   text-indent: 101%;
   overflow: hidden;
@@ -1018,12 +1009,23 @@ a[href*="https://twitter.com/"]:hover {
 }
 
 .navbar__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   list-style: none;
 }
 
 .navbar__item {
   margin-left: 20px;
   font-size: 1.5rem;
+}
+
+.navbar__link {
+  color: #37523d;
+}
+
+.navbar__link:hover {
+  color: #6fd6ab !important;
 }
 
 .navbar__column {
@@ -1034,6 +1036,13 @@ a[href*="https://twitter.com/"]:hover {
 }
 
 .navbar__column__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
   width: 100%;
   text-align: center;
@@ -1083,6 +1092,7 @@ a[href*="https://twitter.com/"]:hover {
   display: inline-block;
   text-align: center;
   background-color: transparent;
+  padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 

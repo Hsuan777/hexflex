@@ -33,32 +33,33 @@
 <body>
   <header>
     <!-- 第七關 -->
-    <div class="container-fluid ">
-      <div class="banner custom__banner bg-secondary">
+    <div class="container-fluid bg-secondary ">
+      <div class="banner custom__banner ">
         <div class="d-flex flex-direction--column justify-content--center align-items--center h-100">
           <img src="img/logo-big.png" alt="" class="custom__logo">
           <h2>今天是吃甜點的好日子</h2>
         </div>
       </div>
-    </div>
-    <div class="container mb-2">
-      <nav class="navbar bg-secondary">
-        <a class="navbar__brand custom__navbar__brand" href="index.html"> HOME </a>
-        <ul class="navbar__nav d-flex ">
-          <li class="navbar__item">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#">About</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#">Product</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <!-- 第四關 表頭 -->
+      <div class="container mb-2">
+        <nav class="navbar px-2 justify-content--between">
+          <a class="navbar__brand custom__navbar__brand" href="index.html"> HOME </a>
+          <ul class="navbar__nav  ">
+            <li class="navbar__item">
+              <a href="index.html" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">About</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Product</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -145,16 +146,16 @@
             <img src="img/logo__span.png" alt="">
             <ul class="navbar__nav navbar__column__nav">
               <li class="navbar__column__item border-0 ">
-                <a href="#">Home</a>
+                <a href="#" class="navbar__link">Home</a>
               </li>
               <li class="navbar__column__item border-0">
-                <a href="#">About</a>
+                <a href="#" class="navbar__link">About</a>
               </li>
               <li class="navbar__column__item border-0">
-                <a href="#">Product</a>
+                <a href="#" class="navbar__link">Product</a>
               </li>
               <li class="navbar__column__item border-0">
-                <a href="#">Contact</a>
+                <a href="#" class="navbar__link">Contact</a>
               </li>
             </ul>
           </div>
@@ -407,23 +408,23 @@
 
   <footer class="bg-primary">
     <div class="container ">
-      <ul class="navbar__nav d-flex justify-content--center align-items--center py-3 ">
-        <li class="navbar__item">
-          <a href="#" class="text-secondary">Home</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="text-secondary">About</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="text-secondary">Product</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="text-secondary">Contact</a>
-        </li>
-      </ul>
-
+      <nav class="navbar justify-content--center  ">
+        <ul class="navbar__nav py-3 ">
+          <li class="navbar__item ">
+            <a href="index.html" class="navbar__link text-secondary">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link text-secondary">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link text-secondary">Product</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link text-secondary">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
   </footer>
 
 </body>

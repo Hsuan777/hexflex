@@ -1,29 +1,35 @@
 .navbar{
   display: flex;
-  justify-content: space-between;
   align-items: center;
   
   &__brand{
-    width: 100%;
-    @include hidden_text(224px, 50px, "../img/logo.png");
+    @include hidden_text(50%, 50px, "../img/logo.png");
   }
   &__nav{
+    display: flex;
     list-style: none;
   }
   &__item{
     margin-left: 20px;
     font-size: 1.5rem;
   }
+  &__link{
+    color:  map-get($color, primary)  ;
+    &:hover{
+      color: map-get($color, success) !important;
+    }
+  }
   &__column{
     flex-direction: column;
     &__nav{
+      display: flex;
+      flex-direction: column;
       margin: 0;
       width: 100%;
       text-align: center;
     }
     &__item{
       padding: 1rem 0;
-      
     }
   }
 }
