@@ -1,6 +1,9 @@
 .container{
   margin: 0 auto;
   width: 960px;
+  &--fluid{
+    width: 100%;
+  }
 }
 
 .col-1,
